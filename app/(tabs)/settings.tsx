@@ -5,7 +5,7 @@ import { SafeAreaView as RNSSafeAreaView } from "react-native-safe-area-context"
 
 const SafeAreaView = styled(RNSSafeAreaView);
 
-const settings = () => {
+const Settings = () => {
     return (
         <SafeAreaView className="flex-1 p-5 bg-background">
             <Text>settings</Text>
@@ -13,4 +13,4 @@ const settings = () => {
     );
 };
 
-export default settings;
+export default Settings;

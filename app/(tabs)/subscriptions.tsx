@@ -5,7 +5,7 @@ import { SafeAreaView as RNSSafeAreaView } from "react-native-safe-area-context"
 
 const SafeAreaView = styled(RNSSafeAreaView);
 
-const subscriptions = () => {
+const Subscriptions = () => {
     return (
         <SafeAreaView className="flex-1 p-5 bg-background">
             <Text>subscriptions</Text>
@@ -13,4 +13,4 @@ const subscriptions = () => {
     );
 };
 
-export default subscriptions;
+export default Subscriptions;

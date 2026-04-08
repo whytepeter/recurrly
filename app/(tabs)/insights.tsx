@@ -5,7 +5,7 @@ import { SafeAreaView as RNSSafeAreaView } from "react-native-safe-area-context"
 
 const SafeAreaView = styled(RNSSafeAreaView);
 
-const insights = () => {
+const Insights = () => {
     return (
         <SafeAreaView className="flex-1 p-5 bg-background">
             <Text>insights</Text>
@@ -13,4 +13,4 @@ const insights = () => {
     );
 };
 
-export default insights;
+export default Insights;
