@@ -20,7 +20,7 @@ import { useState } from "react";
 const SafeAreaView = styled(RNSSafeAreaView);
 
 export default function App() {
-  const [expendedSubscriptionId, setExpendedSubscriptionId] = useState<
+  const [expandedSubscriptionId, setExpandedSubscriptionId] = useState<
     string | null
   >(null);
 
@@ -63,7 +63,7 @@ export default function App() {
                   keyExtractor={(item) => item.id}
                   ListEmptyComponent={
                     <Text className="home-empty-state">
-                      No upcoming renewls yet.
+                      No upcoming renewals yet.
                     </Text>
                   }
                 />
@@ -78,15 +78,15 @@ export default function App() {
             <SubscriptionCard
               {...item}
               key={item.id}
-              expanded={expendedSubscriptionId === item.id}
+              expanded={expandedSubscriptionId === item.id}
               onPress={() =>
-                setExpendedSubscriptionId((current) =>
+                setExpandedSubscriptionId((current) =>
                   current === item.id ? null : item.id
                 )}
             />
           )}
           showsVerticalScrollIndicator={false}
-          extraData={expendedSubscriptionId}
+          extraData={expandedSubscriptionId}
           ItemSeparatorComponent={() => <View className="h-4" />}
           ListEmptyComponent={
             <Text className="home-empty-state">No subscriptions yet.</Text>
